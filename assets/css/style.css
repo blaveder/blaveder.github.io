@@ -1,3 +1,27 @@
+@font-face {
+    font-family:'Gotham';
+    src:url("https:www.daz3d.com/skin/frontend/enterprise/daznew/font/gotham/Gotham-Book.otf")
+   }
+   @font-face {
+    font-family:'GothamItalic';
+    src:url("https:www.daz3d.com/skin/frontend/enterprise/daznew/font/gotham/Gotham-BookItalic.otf")
+   }
+   @font-face {
+    font-family:'GothamLight';
+    src:url("https:www.daz3d.com/skin/frontend/enterprise/daznew/font/gotham/Gotham-Light.otf")
+   }
+   @font-face {
+    font-family:'GothamLightItalic';
+    src:url("https:www.daz3d.com/skin/frontend/enterprise/daznew/font/gotham/Gotham-LightItalic.otf")
+   }
+   @font-face {
+    font-family:'GothamBold';
+    src:url("https:www.daz3d.com/skin/frontend/enterprise/daznew/font/gotham/Gotham-Bold.otf")
+   }
+   @font-face {
+    font-family:'GothamBoldItalic';
+    src:url("https:www.daz3d.com/skin/frontend/enterprise/daznew/font/gotham/Gotham-BoldItalic.otf")
+   }
 html, body {
     height: 100%;
 }
@@ -9,7 +33,7 @@ body {
 }
 h1,h2,h3,h4,h5 {
     color: #005a9c;
-    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-family:'GothamLight';
   }
   h1 {
     font-size: 2.6em;
@@ -37,11 +61,11 @@ h1,h2,h3,h4,h5 {
   }
   p {
       color: #777777;
-      font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+      font-family:'Gotham';
       line-height: normal;
   }
   a, p, ul, li, ol {
-      font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-family:'Gotham';
   }
   #container {
     min-height: 100%;
@@ -52,6 +76,9 @@ header {
     padding: 0;
     background: #fff;
     border-bottom: 2px solid #cccccc;
+}
+.bold {
+    font-family:'GothamBold';
 }
 header .headerInfo {
     width: 100%;
@@ -192,12 +219,42 @@ ul:contactInfo li:nth-child(3) {
 .form .formBox input, .form .formBox textarea {
     width: 98%;
     color: #777;
-    background: white;
+    background: #eee;
     border: 1px solid #333;
-    padding-left: 2%;
+    padding: 2%;
+    border-radius: 10px;
+    background: lighgrey;
+
 }
-.form .formBox textarea {
-    padding-top: 2%;
+button {
+    font-family:'GothamBold';
+    padding: .9% 1.5%;
+    border: 1px solid #777;
+    background: rgb(226,226,226); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+}
+button:hover {
+    color: black;
+    background: rgb(224,243,250); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(224,243,250,1) 0%, rgba(216,240,252,1) 50%, rgba(184,226,246,1) 51%, rgba(182,223,253,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(224,243,250,1) 0%,rgba(216,240,252,1) 50%,rgba(184,226,246,1) 51%,rgba(182,223,253,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(224,243,250,1) 0%,rgba(216,240,252,1) 50%,rgba(184,226,246,1) 51%,rgba(182,223,253,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', endColorstr='#b6dffd',GradientType=0 ); /* IE6-9 */
+font-family:'GothamBold';
+cursor: pointer;
+}
+button:active {
+    font-family:'GothamBold';
+    padding: .9% 1.5%;
+    border: 1px solid #777;
+    background: rgb(226,226,226); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */  
 }
 /* MEDIA INQUIRES */
 
