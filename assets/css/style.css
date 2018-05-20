@@ -93,7 +93,7 @@ a:hover {
     color: black;
 }
 .myPic {
-    margin-right: 2%; width: 100%; max-width: 250px; float: left;
+    margin-right: 2%; width: 100%; max-width: 250px;
 }
 header .headerInfo h1 {
     display: inline-block;
@@ -149,6 +149,7 @@ footer {
     background: #666666;
     border-top: 4px solid #4aaaa5;
     text-align: center;
+    box-sizing: unset !important;
 }
 footer a {
     color: #fff;
